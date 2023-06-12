@@ -1,0 +1,215 @@
+/* General */
+:root {
+    --bitcoin-orange: #F7931A;
+    --grey: #BABABA;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Nunito', sans-serif;
+}
+/* Navigator */
+header {
+    width: 100%;
+    height: 60px;
+}
+header nav {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header nav .nav-left-section {
+    width: auto;
+    min-width: 320px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-left-section a {
+    margin-left: 15px;
+    color: #000000;
+}
+/* List Pages */
+.main-table--header {
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 0 auto 50px;
+}
+
+.main-table--header a {
+    height: 36px;
+    background-color: var(--bitcoin-orange);
+    border: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--white);
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-left: 20px;
+}
+
+.main-table--container {
+    width: 90%;
+    min-width: 230px;
+    margin: 0 auto;
+}
+
+.main-table--container table {
+    width: 100%;
+    height: 100%;
+}
+
+.main-table--container th,tr {
+    text-align: start;
+    height: 30px;
+}
+
+.main-table--container .main-table--long-column {
+    width: 300px;
+}
+.main-table--container .main-table--short-column {
+    width: 100px;
+}
+
+.main-table--container td {
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1rem;
+    color: var(--grey);
+    background-color: var(--white);
+}
+
+.main-table--container td a {
+    color: var(--bitcoin-orange);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.main-table--container .table__right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+
+.main-table--container .table--action {
+    background-color: var(--grey);
+    color: var(--white);
+    border-radius: 4px;
+    padding: 2px 8px;
+    border: 1px solid var(--grey);
+    cursor:pointer;
+}
+
+/* Form Pages */
+
+.main-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-form--header {
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 0 auto 50px;    
+}
+
+.main-form--container {
+    margin: 0 auto 50px;
+    font-size: 1.8rem;
+    font-weight: 300; 
+}
+
+.main-form--container .group {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px auto;
+}
+.main-form--container .group label {
+    margin-right: 20px;
+    align-items: flex-start;
+    width: 100px;
+}
+.main-form--container .group .radio {
+    margin:0;
+}
+.main-form--container .group input[type='radio'] {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: auto;
+    height: 15px;
+}
+.main-form--container .group .grupo--status {
+    width: 500px;
+}
+.main-form--container .group input,select {
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    width: 500px;
+    background-image: none;
+    height: 28px;
+}
+.main-form--container .group--action input {
+    width: 60px;
+    height: 30px;
+    box-shadow: 0px 4px 8px rgba(97, 80, 34, 0.40);
+    border: none;
+    border-radius: 4px;
+    background-color: var(--bitcoin-orange);
+    color: var(--white);
+    margin-right: 20px;
+
+}
+
+.main-form--container .group--action a {
+    color: var(--bitcoin-orange);
+    text-shadow: 0 0 3px #757575;
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+/* Paginator: */
+div.pagination {
+    margin: 30px auto;
+}
+
+div.pagination ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+    gap: 7px;
+}
+
+div.pagination ul li {
+    margin: 10px 0;
+}
+
+div.pagination ul li a {
+    text-decoration: none;
+    color: var(--bitcoin-orange);
+}
